@@ -34,9 +34,10 @@ target_link_libraries(${NAME}
         pico_stdlib
         pico_graphics
         galactic_unicorn
+        pico_bootsel_via_double_reset
         )
 
-file(COPY images DESTINATION ${CMAKE_BINARY_DIR})
+#file(COPY images DESTINATION ${CMAKE_BINARY_DIR})
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(${NAME})

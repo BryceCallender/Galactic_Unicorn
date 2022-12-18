@@ -1475,7 +1475,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " /Users/brycecallender/pico/pico-sdk/src/rp2_common/cmsis /Users/brycecallender/pico/pico-sdk/src/rp2040/hardware_regs /Users/brycecallender/pico/pico-sdk/src/rp2_common/cmsis /Users/brycecallender/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " /Users/brycecallender/pico/pico-sdk/src/rp2_common/cmsis /Users/brycecallender/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",

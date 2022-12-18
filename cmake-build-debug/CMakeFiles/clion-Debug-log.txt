@@ -1,11 +1,19 @@
 "/Users/brycecallender/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/brycecallender/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.7571.171/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/brycecallender/Desktop/Github/Galactic_Unicorn -B /Users/brycecallender/Desktop/Github/Galactic_Unicorn/cmake-build-debug
+Using PICO_SDK_PATH from environment ('/Users/brycecallender/pico/pico-sdk')
 PICO_SDK_PATH is /Users/brycecallender/pico/pico-sdk
-PICO platform is rp2040.
+Defaulting PICO_PLATFORM to rp2040 since not specified.
+Defaulting PICO platform compiler to pico_arm_gcc since not specified.
+PICO compiler is pico_arm_gcc
 PIMORONI_PICO_PATH is /Users/brycecallender/Desktop/Github/pimoroni-pico
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/homebrew/bin/arm-none-eabi-gcc
 Build type is Debug
 Using regular optimized debug build (set PICO_DEOPTIMIZED_DEBUG=1 to de-optimize)
-PICO target board is pico.
+Defaulting PICO target board to pico since not specified.
 Using board configuration from /Users/brycecallender/pico/pico-sdk/src/boards/include/boards/pico.h
+-- Found Python3: /opt/homebrew/Frameworks/Python.framework/Versions/3.11/bin/python3.11 (found version "3.11.0") found components: Interpreter 
 TinyUSB available at /Users/brycecallender/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040; enabling build support for USB.
 Compiling TinyUSB with CFG_TUSB_DEBUG=1
 cyw43-driver available at /Users/brycecallender/pico/pico-sdk/lib/cyw43-driver

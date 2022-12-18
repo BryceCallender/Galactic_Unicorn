@@ -1051,7 +1051,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-4fd33896035b74e50e3a.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-6a05cacce3f347b4089b.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
@@ -1107,7 +1107,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "galactic::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-galactic-Debug-2544d42a1c4cd3d5b7a1.json",
+					"jsonFile" : "target-galactic-Debug-a96ca2826f7b835dc6f4.json",
 					"name" : "galactic",
 					"projectIndex" : 0
 				},

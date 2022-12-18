@@ -119,7 +119,7 @@
 			{
 				"command" : 8,
 				"file" : 0,
-				"line" : 42,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -241,6 +241,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
 				},
 				{
 					"backtrace" : 2,
@@ -640,6 +644,10 @@
 				},
 				{
 					"backtrace" : 2,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
+				},
+				{
+					"backtrace" : 2,
 					"define" : "LIB_PICO_DIVIDER=1"
 				},
 				{
@@ -1016,7 +1024,8 @@
 				47,
 				52,
 				53,
-				54
+				54,
+				55
 			]
 		},
 		{
@@ -1059,6 +1068,10 @@
 				{
 					"backtrace" : 2,
 					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
 				},
 				{
 					"backtrace" : 2,
@@ -2342,7 +2355,8 @@
 				51,
 				52,
 				53,
-				54
+				54,
+				55
 			]
 		},
 		{
@@ -2699,6 +2713,12 @@
 			"backtrace" : 2,
 			"compileGroupIndex" : 1,
 			"path" : "/Users/brycecallender/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "/Users/brycecallender/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c",
 			"sourceGroupIndex" : 0
 		}
 	],

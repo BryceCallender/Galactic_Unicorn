@@ -14,8 +14,8 @@ public:
     ~Genshin();
 
     void loadIcons();
-    void drawIcon(const std::string& name, PicoGraphics_PenRGB888* graphics);
-    void drawIcons(PicoGraphics_PenRGB888* graphics);
+    void drawIcon(const std::string& name, Point pos, PicoGraphics_PenRGB888& graphics);
+    void drawIcons(Point pos, PicoGraphics_PenRGB888& graphics);
 private:
     std::unordered_map<std::string, std::vector<std::vector<Pixel>>> icons;
 };

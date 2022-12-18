@@ -23,19 +23,30 @@ int main(int argc, char** argv)
     galactic_unicorn.init();
 
     Genshin genshin;
-    genshin.loadIcons();
+
+    float scroll = -53.0f;
 
     while(true)
     {
-        if(galactic_unicorn.is_pressed(GalacticUnicorn::SWITCH_BRIGHTNESS_UP)) {
+        if(galactic_unicorn.is_pressed(GalacticUnicorn::SWITCH_BRIGHTNESS_UP))
+        {
             galactic_unicorn.adjust_brightness(+0.01);
         }
-        if(galactic_unicorn.is_pressed(GalacticUnicorn::SWITCH_BRIGHTNESS_DOWN)) {
+
+        if(galactic_unicorn.is_pressed(GalacticUnicorn::SWITCH_BRIGHTNESS_DOWN))
+        {
             galactic_unicorn.adjust_brightness(-0.01);
         }
 
-        graphics.set_pen(112,151,160);
-        graphics.text(message, Point(0, 0), -1);
+        scroll += 0.25f;
+        if (scroll > 11 * 7) {
+            scroll = -53.0f;
+        }
+
+        graphics.set_pen(0, 0, 0);
+        graphics.clear();
+
+        genshin.drawIcons(Point(0 - scroll, 0), graphics);
 
         // update the display
         galactic_unicorn.update(&graphics);
