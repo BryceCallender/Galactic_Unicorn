@@ -1,0 +1,9 @@
+[submodule "github_api"]
+	path = github_api
+	url = https://github.com/Kicer86/github_api.git
+[submodule "ImageMagick"]
+	path = ImageMagick
+	url = https://github.com/ImageMagick/ImageMagick.git
+[submodule "CImg"]
+	path = CImg
+	url = https://github.com/GreycLab/CImg.git
