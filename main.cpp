@@ -2,7 +2,7 @@
 
 #include "libraries/pico_graphics/pico_graphics.hpp"
 #include "galactic_unicorn.hpp"
-#include "Genshin.h"
+#include "Genshin.hpp"
 
 using namespace std;
 using namespace pimoroni;
@@ -15,16 +15,16 @@ GalacticUnicorn galactic_unicorn;
 
 std::string message = "Cryo";
 
-int main(int argc, char** argv)
+int main()
 {
     stdio_init_all();
 
     // initialise the GalacticUnicorn object
     galactic_unicorn.init();
 
-    Genshin genshin;
+    Genshin genshin(galactic_unicorn, graphics);
 
-    float scroll = -53.0f;
+    genshin.startSequence();
 
     while(true)
     {
@@ -38,15 +38,15 @@ int main(int argc, char** argv)
             galactic_unicorn.adjust_brightness(-0.01);
         }
 
-        scroll += 0.25f;
-        if (scroll > 11 * 7) {
-            scroll = -53.0f;
-        }
-
         graphics.set_pen(0, 0, 0);
         graphics.clear();
 
-        genshin.drawIcons(Point(0 - scroll, 0), graphics);
+        if(galactic_unicorn.is_pressed(GalacticUnicorn::SWITCH_SLEEP))
+        {
+            continue;
+        }
+
+        genshin.checkSequenceButton();
 
         // update the display
         galactic_unicorn.update(&graphics);

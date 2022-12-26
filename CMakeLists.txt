@@ -27,17 +27,17 @@ add_compile_options(-Wall
         -Wno-maybe-uninitialized
         )
 
-set(SOURCE_FILES main.cpp Genshin.h Genshin.cpp)
+set(SOURCE_FILES main.cpp Genshin.hpp Genshin.cpp audio_samples.cpp Sequence.hpp Sequence.cpp)
 
 add_executable(${NAME} ${SOURCE_FILES})
 target_link_libraries(${NAME}
         pico_stdlib
         pico_graphics
         galactic_unicorn
-        pico_bootsel_via_double_reset
         )
 
-#file(COPY images DESTINATION ${CMAKE_BINARY_DIR})
+pico_enable_stdio_usb(${NAME} 1)
+pico_enable_stdio_uart(${NAME} 0)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(${NAME})
